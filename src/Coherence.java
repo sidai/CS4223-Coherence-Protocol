@@ -1,3 +1,10 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +42,9 @@ public class Coherence {
         long cycle = 0;
         while (!checkDone(processors)) {
             cycle++;
+            if(cycle % 1000000 == 0) {
+                System.out.println("#cycle past: " + cycle);
+            }
             for (Processor p: processors) {
                 if(!p.done()) {
                     p.nextTick();
@@ -48,21 +58,24 @@ public class Coherence {
             p.close();
         }
 
+        PrintWriter pr = getPrinter(protocol, inputFile, cacheSize, associativity, blockSize);
         // Record Down All Statistics
         // Run Configuration
-        System.out.println("----------------------------------------Run Config--------------------------------------");
-        System.out.println("Protocol: " + protocol + ", Input file: " + inputFile);
-        System.out.println("Caches size: " + cacheSize + ", associativity: " + associativity + ", block size: " + blockSize);
-        System.out.println("Overall Execution Time: " + cycle);
-        System.out.println();
+        pr.println("----------------------------------------Run Config--------------------------------------");
+        pr.println("Protocol: " + protocol + ", Input file: " + inputFile);
+        pr.println("Caches size: " + cacheSize + ", associativity: " + associativity + ", block size: " + blockSize);
+        pr.println("Overall Execution Time: " + cycle);
+        pr.println();
 
         // Statistic for overall runtime and bus
-        bus.summary();
+        bus.summary(pr);
 
         // Statistic for each process
         for(Processor p: processors) {
-            p.summary();
+            p.summary(pr);
         }
+
+        pr.close();
     }
 
     private static boolean checkDone(List<Processor> processors) {
@@ -74,5 +87,17 @@ public class Coherence {
             }
         }
         return done;
+    }
+
+    private static PrintWriter getPrinter(String protocol, String inputFile, int cacheSize,
+                                          int associativity, int blockSize) throws IOException {
+        String fileName = protocol + "_" + inputFile + "_" + cacheSize + "_" + associativity + "_" + blockSize + ".txt";
+        String path = "../result/" + fileName;
+        Path pathToFile = Paths.get(path);
+        if(!Files.exists(pathToFile)) {
+            Files.createDirectories(pathToFile.getParent());
+            Files.createFile(pathToFile);
+        }
+        return new PrintWriter(new BufferedWriter(new FileWriter(path)));
     }
 }

@@ -5,8 +5,23 @@ import java.io.IOException;
 
 public class TraceReader {
 	private final BufferedReader br;
-	private final String PATH = "./data/";
-	
+	private final String PATH = "../data/";
+	private int lineOfCode;
+	private int numOfLoad;
+	private int numOfStore;
+	private int numOfCompute;
+
+
+//	public static void main(String[] arg) throws Exception {
+//		String fileName = "b_0.data";
+//		TraceReader reader = new TraceReader(fileName);
+//		Command command = reader.getNextCommand();
+//		while(!Command.Type.EOF.equals(command.getType())) {
+//			System.out.println(command.getType() + ", " + command.getValue());
+//			command = reader.getNextCommand();
+//		}
+//	}
+
 	public TraceReader(String fileName) throws FileNotFoundException {
 		br = new BufferedReader(new FileReader(PATH + fileName));
 	}
@@ -14,10 +29,12 @@ public class TraceReader {
 	public Command getNextCommand() {
 		try {
 			String instruction = br.readLine();
-			if (instruction == null) return new Command(3, 0);
-			else {
+			if (instruction == null) {
+				return new Command(3, 0);
+			} else {
 				String[] splitted = instruction.split(" ");
-				return new Command(Integer.parseInt(splitted[0]), Integer.parseInt(splitted[1], 16));
+				record(Integer.parseInt(splitted[0]));
+				return new Command(Integer.parseInt(splitted[0]), Integer.decode(splitted[1]));
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -25,7 +42,34 @@ public class TraceReader {
 		}
 
 	}
-	
+
+	private void record(int command) {
+		lineOfCode++;
+		if (command == 0) {
+			numOfLoad++;
+		} else if (command == 1) {
+			numOfStore++;
+		} else if (command == 2) {
+			numOfCompute++;
+		}
+	}
+
+	public int getLineOfCode() {
+		return lineOfCode;
+	}
+
+	public int getNumOfLoad() {
+		return numOfLoad;
+	}
+
+	public int getNumOfStore() {
+		return numOfStore;
+	}
+
+	public int getNumOfCompute() {
+		return numOfCompute;
+	}
+
 	public void close() {
 		try {
 			br.close();

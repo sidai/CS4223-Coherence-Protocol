@@ -1,3 +1,4 @@
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -31,19 +32,22 @@ public class Bus {
 
 	public void addTransaction(Transaction t) {
 		transactionQueue.add(t);
+//		System.out.println("Bus received: " + t.getId() + ", " + t.getType() + ", " + t.getAddress());
 	}
 
 	public void nextTick() {
-		if (waitCounter > 1) {
+		if (waitCounter > 0) {
 			waitCounter--;
 			if(waitCounter == 0) {
                 snoopers.get(next.getId()).unstall(next);
+//				System.out.println("unstall: " + next.getId() + ", " + next.getType() + ", " + next.getAddress());
             }
 			return;
 		}
 
 		next = transactionQueue.poll();
 		if (next != null) {
+//			System.out.println("process: " + next.getId() + ", " + next.getType() + ", " + next.getAddress());
 			process(next);
 		}
 	}
@@ -105,10 +109,11 @@ public class Bus {
 		snoopers.addAll(processors);
 	}
 
-	public void summary() {
-		System.out.println("----------------------------------------Bus Summary--------------------------------------");
-		System.out.println("#DataTraffic : " + dataTraffic + " bytes");
-		System.out.println("#Invalidations or Update : " + invOrUpd);
-		System.out.println("#Write Back : " + wb);
+	public void summary(PrintWriter pr) {
+		pr.println("----------------------------------------Bus Summary--------------------------------------");
+		pr.println("#DataTraffic : " + dataTraffic + " bytes");
+		pr.println("#Invalidations or Update : " + invOrUpd);
+		pr.println("#Write Back : " + wb);
+		pr.println();
 	}
 }

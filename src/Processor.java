@@ -1,3 +1,4 @@
+import java.io.PrintWriter;
 import java.text.DecimalFormat;
 
 public class Processor {
@@ -88,6 +89,7 @@ public class Processor {
 
 
 	public void addTransaction(Transaction.Type type, int address) {
+//		System.out.println("add: " + id + ", " + type + ", " + address);
 		if (type.equals(Transaction.Type.BusRd) || type.equals(Transaction.Type.BusRdX)) {
 			bus.addTransaction(new Transaction(type, id, address));
 			stall = true;
@@ -98,24 +100,28 @@ public class Processor {
 	}
 
 	public boolean snoop(Transaction transaction) {
+//		System.out.println("snoop: " + transaction.getId() + ", " + transaction.getType() + ", " + transaction.getAddress());
 		return controller.snoop(transaction);
 	}
 
 	public void unstall(Transaction transaction) {
+//		System.out.println("unstall: " + transaction.getId() + ", " + transaction.getType() + ", " + transaction.getAddress());
 		stall = false;    //unstall the process if it is stalled due to I/O as I/O transaction completed.
 		controller.unstall(transaction);
 	}
 
-	public void summary() {
-		System.out.println("----------------------------------------Processor #" + id + " Summary--------------------------------------");
-		System.out.println("#Total cycles: " + cycle + ", #Compute cycles: " + computeCycle + ", #Idle cycles: " + idleCycle);
+	public void summary(PrintWriter pr) {
+		pr.println("----------------------------------------Processor #" + id + " Summary--------------------------------------");
+		pr.println("#Total cycles: " + cycle + ", #Compute cycles: " + computeCycle + ", #Idle cycles: " + idleCycle);
 
 		DecimalFormat df = new DecimalFormat();
 		df.setMaximumFractionDigits(2);
-		System.out.println("#Loads & Stores: " + controller.getTotalMemOp() + ", #Hits: " + controller.getHit() +
-				           "#Misses: " + controller.getMiss() + ", %Cache Miss Rate: " + df.format(controller.getMissRate()));
-		System.out.println("#Accesses: " + controller.getTotalMemAccess() + ", %Public accesses: " + df.format(controller.getPublicPercentage()) +
-				           "#Private Accesses: " + df.format(controller.getPrivatePercentage()));
-		System.out.println();
+		pr.println("#Line of Code: " + trace.getLineOfCode() + ", #Loads: " + trace.getNumOfLoad() + ", #Stores: "
+				   + trace.getNumOfStore() + ", #Computes: " + trace.getNumOfCompute());
+		pr.println("#Loads & Stores: " + controller.getTotalMemOp() + ", #Hits: " + controller.getHit() +
+		           ", #Misses: " + controller.getMiss() + ", %Cache Miss Rate: " + df.format(controller.getMissRate()));
+		pr.println("#Accesses: " + controller.getTotalMemAccess() + ", %Public accesses: " + df.format(controller.getPublicPercentage()) +
+		           ", #Private Accesses: " + df.format(controller.getPrivatePercentage()));
+		pr.println();
 	}
 }
