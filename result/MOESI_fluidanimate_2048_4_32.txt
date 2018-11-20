@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: MOESI, Input file: fluidanimate
+Caches size: 2048, associativity: 4, block size: 32
+Overall Execution Time: 611131127
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 201643712 bytes
+#Invalidations or Update : 1948857
+#Write Back : 324671
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 611131127, #Compute cycles: 11337782, #Idle cycles: 594640339
+#Line of Code: 5153005, #Loads: 1832392, #Stores: 744111, #Computes: 2576502
+#Loads & Stores: 2576503, #Hits: 955957, #Misses: 1620546, %Cache Miss Rate: 62.9
+#Accesses: 955957, %Public accesses: 15.64, #Private Accesses: 84.36
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 451400398, #Compute cycles: 11290799, #Idle cycles: 435293911
+#Line of Code: 4815687, #Loads: 1821846, #Stores: 585998, #Computes: 2407843
+#Loads & Stores: 2407844, #Hits: 1059573, #Misses: 1348271, %Cache Miss Rate: 55.99
+#Accesses: 1059573, %Public accesses: 17.03, #Private Accesses: 82.97
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 303306465, #Compute cycles: 11337671, #Idle cycles: 286760416
+#Line of Code: 5208377, #Loads: 1838008, #Stores: 766181, #Computes: 2604188
+#Loads & Stores: 2604189, #Hits: 918691, #Misses: 1685498, %Cache Miss Rate: 64.72
+#Accesses: 918691, %Public accesses: 22.07, #Private Accesses: 77.93
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 304716894, #Compute cycles: 11301515, #Idle cycles: 288592449
+#Line of Code: 4822929, #Loads: 1832174, #Stores: 579291, #Computes: 2411464
+#Loads & Stores: 2411465, #Hits: 1031754, #Misses: 1379711, %Cache Miss Rate: 57.21
+#Accesses: 1031754, %Public accesses: 20.29, #Private Accesses: 79.71
+

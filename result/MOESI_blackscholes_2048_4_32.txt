@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: MOESI, Input file: blackscholes
+Caches size: 2048, associativity: 4, block size: 32
+Overall Execution Time: 37841065
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 14605600 bytes
+#Invalidations or Update : 105284
+#Write Back : 81471
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 37796437, #Compute cycles: 10430314, #Idle cycles: 22371425
+#Line of Code: 4994697, #Loads: 1489888, #Stores: 1007461, #Computes: 2497348
+#Loads & Stores: 2497349, #Hits: 2408458, #Misses: 88891, %Cache Miss Rate: 3.56
+#Accesses: 2408458, %Public accesses: 18.33, #Private Accesses: 81.67
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 37801080, #Compute cycles: 10383276, #Idle cycles: 22436868
+#Line of Code: 4980935, #Loads: 1485857, #Stores: 1004611, #Computes: 2490467
+#Loads & Stores: 2490468, #Hits: 2405521, #Misses: 84947, %Cache Miss Rate: 3.41
+#Accesses: 2405521, %Public accesses: 18.36, #Private Accesses: 81.64
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 37078586, #Compute cycles: 10430338, #Idle cycles: 21630134
+#Line of Code: 5018113, #Loads: 1492629, #Stores: 1016428, #Computes: 2509056
+#Loads & Stores: 2509057, #Hits: 2395809, #Misses: 113248, %Cache Miss Rate: 4.51
+#Accesses: 2395809, %Public accesses: 18.1, #Private Accesses: 81.9
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 37841065, #Compute cycles: 10394904, #Idle cycles: 22439907
+#Line of Code: 5006253, #Loads: 1493736, #Stores: 1009391, #Computes: 2503126
+#Loads & Stores: 2503127, #Hits: 2415259, #Misses: 87868, %Cache Miss Rate: 3.51
+#Accesses: 2415259, %Public accesses: 18.36, #Private Accesses: 81.64
+

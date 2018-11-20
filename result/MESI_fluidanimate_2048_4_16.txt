@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: MESI, Input file: fluidanimate
+Caches size: 2048, associativity: 4, block size: 16
+Overall Execution Time: 646749477
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 106321680 bytes
+#Invalidations or Update : 1957203
+#Write Back : 562112
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 646749477, #Compute cycles: 11337782, #Idle cycles: 630258689
+#Line of Code: 5153005, #Loads: 1832392, #Stores: 744111, #Computes: 2576502
+#Loads & Stores: 2576503, #Hits: 964873, #Misses: 1611630, %Cache Miss Rate: 62.55
+#Accesses: 964873, %Public accesses: 14.02, #Private Accesses: 85.98
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 480607670, #Compute cycles: 11290799, #Idle cycles: 464501183
+#Line of Code: 4815687, #Loads: 1821846, #Stores: 585998, #Computes: 2407843
+#Loads & Stores: 2407844, #Hits: 948781, #Misses: 1459063, %Cache Miss Rate: 60.6
+#Accesses: 948781, %Public accesses: 12.71, #Private Accesses: 87.29
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 322514158, #Compute cycles: 11337671, #Idle cycles: 305968109
+#Line of Code: 5208377, #Loads: 1838008, #Stores: 766181, #Computes: 2604188
+#Loads & Stores: 2604189, #Hits: 959412, #Misses: 1644777, %Cache Miss Rate: 63.16
+#Accesses: 959412, %Public accesses: 11.43, #Private Accesses: 88.57
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 213162081, #Compute cycles: 11301515, #Idle cycles: 197037636
+#Line of Code: 4822929, #Loads: 1832174, #Stores: 579291, #Computes: 2411464
+#Loads & Stores: 2411465, #Hits: 935772, #Misses: 1475693, %Cache Miss Rate: 61.19
+#Accesses: 935772, %Public accesses: 13.96, #Private Accesses: 86.04
+

@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: dragon, Input file: blackscholes
+Caches size: 2048, associativity: 4, block size: 16
+Overall Execution Time: 28241880
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 4606784 bytes
+#Invalidations or Update : 0
+#Write Back : 30825
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 28058274, #Compute cycles: 10430314, #Idle cycles: 12633262
+#Line of Code: 4994697, #Loads: 1489888, #Stores: 1007461, #Computes: 2497348
+#Loads & Stores: 2497349, #Hits: 2437785, #Misses: 59564, %Cache Miss Rate: 2.39
+#Accesses: 2437785, %Public accesses: 19.98, #Private Accesses: 80.02
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 28119848, #Compute cycles: 10383276, #Idle cycles: 12755636
+#Line of Code: 4980935, #Loads: 1485857, #Stores: 1004611, #Computes: 2490467
+#Loads & Stores: 2490468, #Hits: 2431885, #Misses: 58583, %Cache Miss Rate: 2.35
+#Accesses: 2431885, %Public accesses: 20.17, #Private Accesses: 79.83
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 28241880, #Compute cycles: 10430338, #Idle cycles: 12793428
+#Line of Code: 5018113, #Loads: 1492629, #Stores: 1016428, #Computes: 2509056
+#Loads & Stores: 2509057, #Hits: 2430277, #Misses: 78780, %Cache Miss Rate: 3.14
+#Accesses: 2430277, %Public accesses: 18.83, #Private Accesses: 81.17
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 28186753, #Compute cycles: 10394904, #Idle cycles: 12785595
+#Line of Code: 5006253, #Loads: 1493736, #Stores: 1009391, #Computes: 2503126
+#Loads & Stores: 2503127, #Hits: 2442955, #Misses: 60172, %Cache Miss Rate: 2.4
+#Accesses: 2442955, %Public accesses: 20.18, #Private Accesses: 79.82
+

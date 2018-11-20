@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: MOESI, Input file: blackscholes
+Caches size: 2048, associativity: 2, block size: 16
+Overall Execution Time: 54945531
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 11431440 bytes
+#Invalidations or Update : 81778
+#Write Back : 140171
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 54907601, #Compute cycles: 10430314, #Idle cycles: 39482589
+#Line of Code: 4994697, #Loads: 1489888, #Stores: 1007461, #Computes: 2497348
+#Loads & Stores: 2497349, #Hits: 2360600, #Misses: 136749, %Cache Miss Rate: 5.48
+#Accesses: 2360600, %Public accesses: 17.51, #Private Accesses: 82.49
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 54945531, #Compute cycles: 10383276, #Idle cycles: 39581319
+#Line of Code: 4980935, #Loads: 1485857, #Stores: 1004611, #Computes: 2490467
+#Loads & Stores: 2490468, #Hits: 2357216, #Misses: 133252, %Cache Miss Rate: 5.35
+#Accesses: 2357216, %Public accesses: 17.54, #Private Accesses: 82.46
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 53019304, #Compute cycles: 10430338, #Idle cycles: 37570852
+#Line of Code: 5018113, #Loads: 1492629, #Stores: 1016428, #Computes: 2509056
+#Loads & Stores: 2509057, #Hits: 2341429, #Misses: 167628, %Cache Miss Rate: 6.68
+#Accesses: 2341429, %Public accesses: 17.16, #Private Accesses: 82.84
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 54852685, #Compute cycles: 10394904, #Idle cycles: 39451527
+#Line of Code: 5006253, #Loads: 1493736, #Stores: 1009391, #Computes: 2503126
+#Loads & Stores: 2503127, #Hits: 2366462, #Misses: 136665, %Cache Miss Rate: 5.46
+#Accesses: 2366462, %Public accesses: 17.51, #Private Accesses: 82.49
+
