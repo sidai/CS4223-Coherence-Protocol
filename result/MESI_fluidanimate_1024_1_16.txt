@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: MESI, Input file: fluidanimate
+Caches size: 1024, associativity: 1, block size: 16
+Overall Execution Time: 730438457
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 120494624 bytes
+#Invalidations or Update : 2085813
+#Write Back : 704983
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 730438457, #Compute cycles: 11337782, #Idle cycles: 713947669
+#Line of Code: 5153005, #Loads: 1832392, #Stores: 744111, #Computes: 2576502
+#Loads & Stores: 2576503, #Hits: 779877, #Misses: 1796626, %Cache Miss Rate: 69.73
+#Accesses: 779877, %Public accesses: 16.17, #Private Accesses: 83.83
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 541873671, #Compute cycles: 11290799, #Idle cycles: 525767184
+#Line of Code: 4815687, #Loads: 1821846, #Stores: 585998, #Computes: 2407843
+#Loads & Stores: 2407844, #Hits: 726132, #Misses: 1681712, %Cache Miss Rate: 69.84
+#Accesses: 726132, %Public accesses: 17.2, #Private Accesses: 82.8
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 360340230, #Compute cycles: 11337671, #Idle cycles: 343794181
+#Line of Code: 5208377, #Loads: 1838008, #Stores: 766181, #Computes: 2604188
+#Loads & Stores: 2604189, #Hits: 783372, #Misses: 1820817, %Cache Miss Rate: 69.92
+#Accesses: 783372, %Public accesses: 13.25, #Private Accesses: 86.75
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 262099664, #Compute cycles: 11301515, #Idle cycles: 245975219
+#Line of Code: 4822929, #Loads: 1832174, #Stores: 579291, #Computes: 2411464
+#Loads & Stores: 2411465, #Hits: 737419, #Misses: 1674046, %Cache Miss Rate: 69.42
+#Accesses: 737419, %Public accesses: 9.85, #Private Accesses: 90.15
+

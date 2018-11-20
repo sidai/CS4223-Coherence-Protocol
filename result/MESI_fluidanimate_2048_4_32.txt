@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: MESI, Input file: fluidanimate
+Caches size: 2048, associativity: 4, block size: 32
+Overall Execution Time: 611441723
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 203344832 bytes
+#Invalidations or Update : 1958975
+#Write Back : 324363
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 611441723, #Compute cycles: 11337782, #Idle cycles: 594950935
+#Line of Code: 5153005, #Loads: 1832392, #Stores: 744111, #Computes: 2576502
+#Loads & Stores: 2576503, #Hits: 950041, #Misses: 1626462, %Cache Miss Rate: 63.13
+#Accesses: 950041, %Public accesses: 17.68, #Private Accesses: 82.32
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 460573184, #Compute cycles: 11290799, #Idle cycles: 444466697
+#Line of Code: 4815687, #Loads: 1821846, #Stores: 585998, #Computes: 2407843
+#Loads & Stores: 2407844, #Hits: 991367, #Misses: 1416477, %Cache Miss Rate: 58.83
+#Accesses: 991367, %Public accesses: 22.17, #Private Accesses: 77.83
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 246718126, #Compute cycles: 11337671, #Idle cycles: 230172077
+#Line of Code: 5208377, #Loads: 1838008, #Stores: 766181, #Computes: 2604188
+#Loads & Stores: 2604189, #Hits: 921375, #Misses: 1682814, %Cache Miss Rate: 64.62
+#Accesses: 921375, %Public accesses: 19.57, #Private Accesses: 80.43
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 431989753, #Compute cycles: 11301515, #Idle cycles: 415865308
+#Line of Code: 4822929, #Loads: 1832174, #Stores: 579291, #Computes: 2411464
+#Loads & Stores: 2411465, #Hits: 1048424, #Misses: 1363041, %Cache Miss Rate: 56.52
+#Accesses: 1048424, %Public accesses: 22.83, #Private Accesses: 77.17
+

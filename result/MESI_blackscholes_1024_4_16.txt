@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: MESI, Input file: blackscholes
+Caches size: 1024, associativity: 4, block size: 16
+Overall Execution Time: 143420045
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 29942464 bytes
+#Invalidations or Update : 539094
+#Write Back : 207881
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 143420045, #Compute cycles: 10430314, #Idle cycles: 127995033
+#Line of Code: 4994697, #Loads: 1489888, #Stores: 1007461, #Computes: 2497348
+#Loads & Stores: 2497349, #Hits: 2090827, #Misses: 406522, %Cache Miss Rate: 16.28
+#Accesses: 2090827, %Public accesses: 15.45, #Private Accesses: 84.55
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 142941959, #Compute cycles: 10383276, #Idle cycles: 127577747
+#Line of Code: 4980935, #Loads: 1485857, #Stores: 1004611, #Computes: 2490467
+#Loads & Stores: 2490468, #Hits: 2086043, #Misses: 404425, %Cache Miss Rate: 16.24
+#Accesses: 2086043, %Public accesses: 15.5, #Private Accesses: 84.5
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 138076253, #Compute cycles: 10430338, #Idle cycles: 122627801
+#Line of Code: 5018113, #Loads: 1492629, #Stores: 1016428, #Computes: 2509056
+#Loads & Stores: 2509057, #Hits: 2067394, #Misses: 441663, %Cache Miss Rate: 17.6
+#Accesses: 2067394, %Public accesses: 15.34, #Private Accesses: 84.66
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 142912118, #Compute cycles: 10394904, #Idle cycles: 127510960
+#Line of Code: 5006253, #Loads: 1493736, #Stores: 1009391, #Computes: 2503126
+#Loads & Stores: 2503127, #Hits: 2092214, #Misses: 410913, %Cache Miss Rate: 16.42
+#Accesses: 2092214, %Public accesses: 15.43, #Private Accesses: 84.57
+

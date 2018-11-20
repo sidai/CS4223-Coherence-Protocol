@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: dragon, Input file: fluidanimate
+Caches size: 1024, associativity: 4, block size: 16
+Overall Execution Time: 306961074
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 49483392 bytes
+#Invalidations or Update : 0
+#Write Back : 50197
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 299985761, #Compute cycles: 11337782, #Idle cycles: 283494973
+#Line of Code: 5153005, #Loads: 1832392, #Stores: 744111, #Computes: 2576502
+#Loads & Stores: 2576503, #Hits: 1752910, #Misses: 823593, %Cache Miss Rate: 31.97
+#Accesses: 1752910, %Public accesses: 21.61, #Private Accesses: 78.39
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 306961074, #Compute cycles: 11290799, #Idle cycles: 290854587
+#Line of Code: 4815687, #Loads: 1821846, #Stores: 585998, #Computes: 2407843
+#Loads & Stores: 2407844, #Hits: 1720345, #Misses: 687499, %Cache Miss Rate: 28.55
+#Accesses: 1720345, %Public accesses: 22.2, #Private Accesses: 77.8
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 304361313, #Compute cycles: 11337671, #Idle cycles: 287815264
+#Line of Code: 5208377, #Loads: 1838008, #Stores: 766181, #Computes: 2604188
+#Loads & Stores: 2604189, #Hits: 1754264, #Misses: 849925, %Cache Miss Rate: 32.64
+#Accesses: 1754264, %Public accesses: 21.69, #Private Accesses: 78.31
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 306463596, #Compute cycles: 11301515, #Idle cycles: 290339151
+#Line of Code: 4822929, #Loads: 1832174, #Stores: 579291, #Computes: 2411464
+#Loads & Stores: 2411465, #Hits: 1729967, #Misses: 681498, %Cache Miss Rate: 28.26
+#Accesses: 1729967, %Public accesses: 22.1, #Private Accesses: 77.9
+

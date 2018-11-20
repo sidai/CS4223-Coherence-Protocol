@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: MOESI, Input file: bodytrack
+Caches size: 2048, associativity: 4, block size: 32
+Overall Execution Time: 121720440
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 39756608 bytes
+#Invalidations or Update : 296752
+#Write Back : 90872
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 121037978, #Compute cycles: 17729254, #Idle cycles: 96768460
+#Line of Code: 6540263, #Loads: 2380720, #Stores: 889412, #Computes: 3270131
+#Loads & Stores: 3270132, #Hits: 2909547, #Misses: 360585, %Cache Miss Rate: 11.03
+#Accesses: 2909547, %Public accesses: 10.84, #Private Accesses: 89.16
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 120022563, #Compute cycles: 17120545, #Idle cycles: 96327514
+#Line of Code: 6574503, #Loads: 2388005, #Stores: 899247, #Computes: 3287251
+#Loads & Stores: 3287252, #Hits: 2912023, #Misses: 375229, %Cache Miss Rate: 11.41
+#Accesses: 2912023, %Public accesses: 9.37, #Private Accesses: 90.63
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 25816153, #Compute cycles: 17556877, #Idle cycles: 8023880
+#Line of Code: 235395, #Loads: 74523, #Stores: 43175, #Computes: 117697
+#Loads & Stores: 117698, #Hits: 82607, #Misses: 35091, %Cache Miss Rate: 29.81
+#Accesses: 82607, %Public accesses: 23.2, #Private Accesses: 76.8
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 121720440, #Compute cycles: 17140113, #Idle cycles: 97930489
+#Line of Code: 6649837, #Loads: 2416052, #Stores: 908867, #Computes: 3324918
+#Loads & Stores: 3324919, #Hits: 2944302, #Misses: 380617, %Cache Miss Rate: 11.45
+#Accesses: 2944302, %Public accesses: 10.18, #Private Accesses: 89.82
+

@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: MOESI, Input file: blackscholes
+Caches size: 1024, associativity: 4, block size: 16
+Overall Execution Time: 142920728
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 29902112 bytes
+#Invalidations or Update : 536198
+#Write Back : 209570
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 142848424, #Compute cycles: 10430314, #Idle cycles: 127423412
+#Line of Code: 4994697, #Loads: 1489888, #Stores: 1007461, #Computes: 2497348
+#Loads & Stores: 2497349, #Hits: 2090862, #Misses: 406487, %Cache Miss Rate: 16.28
+#Accesses: 2090862, %Public accesses: 15.46, #Private Accesses: 84.54
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 142920728, #Compute cycles: 10383276, #Idle cycles: 127556516
+#Line of Code: 4980935, #Loads: 1485857, #Stores: 1004611, #Computes: 2490467
+#Loads & Stores: 2490468, #Hits: 2087955, #Misses: 402513, %Cache Miss Rate: 16.16
+#Accesses: 2087955, %Public accesses: 15.47, #Private Accesses: 84.53
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 136100406, #Compute cycles: 10430338, #Idle cycles: 120651954
+#Line of Code: 5018113, #Loads: 1492629, #Stores: 1016428, #Computes: 2509056
+#Loads & Stores: 2509057, #Hits: 2067635, #Misses: 441422, %Cache Miss Rate: 17.59
+#Accesses: 2067635, %Public accesses: 15.23, #Private Accesses: 84.77
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 142447985, #Compute cycles: 10394904, #Idle cycles: 127046827
+#Line of Code: 5006253, #Loads: 1493736, #Stores: 1009391, #Computes: 2503126
+#Loads & Stores: 2503127, #Hits: 2094236, #Misses: 408891, %Cache Miss Rate: 16.34
+#Accesses: 2094236, %Public accesses: 15.38, #Private Accesses: 84.62
+

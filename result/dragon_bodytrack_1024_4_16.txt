@@ -1,0 +1,34 @@
+----------------------------------------Run Config--------------------------------------
+Protocol: dragon, Input file: bodytrack
+Caches size: 1024, associativity: 4, block size: 16
+Overall Execution Time: 188918316
+
+----------------------------------------Bus Summary--------------------------------------
+#DataTraffic : 31191984 bytes
+#Invalidations or Update : 0
+#Write Back : 83524
+
+----------------------------------------Processor #0 Summary--------------------------------------
+#Total cycles: 188529515, #Compute cycles: 17729254, #Idle cycles: 164259997
+#Line of Code: 6540263, #Loads: 2380720, #Stores: 889412, #Computes: 3270131
+#Loads & Stores: 3270132, #Hits: 2661571, #Misses: 608561, %Cache Miss Rate: 18.61
+#Accesses: 2661571, %Public accesses: 10.02, #Private Accesses: 89.98
+
+----------------------------------------Processor #1 Summary--------------------------------------
+#Total cycles: 187766572, #Compute cycles: 17120545, #Idle cycles: 164071523
+#Line of Code: 6574503, #Loads: 2388005, #Stores: 899247, #Computes: 3287251
+#Loads & Stores: 3287252, #Hits: 2675014, #Misses: 612238, %Cache Miss Rate: 18.62
+#Accesses: 2675014, %Public accesses: 7.05, #Private Accesses: 92.95
+
+----------------------------------------Processor #2 Summary--------------------------------------
+#Total cycles: 33580902, #Compute cycles: 17556877, #Idle cycles: 15788629
+#Line of Code: 235395, #Loads: 74523, #Stores: 43175, #Computes: 117697
+#Loads & Stores: 117698, #Hits: 81093, #Misses: 36605, %Cache Miss Rate: 31.1
+#Accesses: 81093, %Public accesses: 25.12, #Private Accesses: 74.88
+
+----------------------------------------Processor #3 Summary--------------------------------------
+#Total cycles: 188918316, #Compute cycles: 17140113, #Idle cycles: 165128365
+#Line of Code: 6649837, #Loads: 2416052, #Stores: 908867, #Computes: 3324918
+#Loads & Stores: 3324919, #Hits: 2716340, #Misses: 608579, %Cache Miss Rate: 18.3
+#Accesses: 2716340, %Public accesses: 8.52, #Private Accesses: 91.48
+
