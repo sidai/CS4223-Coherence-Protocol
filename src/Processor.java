@@ -93,7 +93,8 @@ public class Processor {
 		if (type.equals(Transaction.Type.BusRd) || type.equals(Transaction.Type.BusRdX)) {
 			bus.addTransaction(new Transaction(type, id, address));
 			stall = true;
-		} else if (type.equals(Transaction.Type.BusUpgr) || type.equals(Transaction.Type.WB)) {
+		} else if (type.equals(Transaction.Type.BusUpgr) || type.equals(Transaction.Type.BusUpd)
+				|| type.equals(Transaction.Type.WB)) {
 			bus.addTransaction(new Transaction(type, id, address));
 			//don't stall for upgrade & wb process.
 		}
@@ -123,5 +124,12 @@ public class Processor {
 		pr.println("#Accesses: " + controller.getTotalMemAccess() + ", %Public accesses: " + df.format(controller.getPublicPercentage()) +
 		           ", #Private Accesses: " + df.format(controller.getPrivatePercentage()));
 		pr.println();
+	}
+
+	public void shortSummary(PrintWriter pr) {
+		DecimalFormat df = new DecimalFormat();
+		df.setMaximumFractionDigits(2);
+		pr.print(cycle + "," + computeCycle + "," + controller.getTotalMemOp() + "," + idleCycle + "," + df.format(controller.getMissRate()) + "," +
+				controller.getTotalMemAccess() + "," + df.format(controller.getPublicPercentage()) + "," + df.format(controller.getPrivatePercentage()));
 	}
 }

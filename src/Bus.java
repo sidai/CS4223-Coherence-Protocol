@@ -38,12 +38,14 @@ public class Bus {
 	public void nextTick() {
 		if (waitCounter > 0) {
 			waitCounter--;
-			if(waitCounter == 0) {
-                snoopers.get(next.getId()).unstall(next);
-//				System.out.println("unstall: " + next.getId() + ", " + next.getType() + ", " + next.getAddress());
-            }
 			return;
 		}
+
+		// unstall the previous transaction and continue to fetch next one
+		if(next != null) {
+			snoopers.get(next.getId()).unstall(next);
+		}
+//				System.out.println("unstall: " + next.getId() + ", " + next.getType() + ", " + next.getAddress());
 
 		next = transactionQueue.poll();
 		if (next != null) {
@@ -95,9 +97,9 @@ public class Bus {
 		case BusUpd:
 			if (canProvide) {
 				next.setShared(true);     //indicate other processes has a valid copy after current transaction
+				waitCounter = UPDATE;
+				dataTraffic += WORDSIZE;
 			}
-			waitCounter = UPDATE;
-			dataTraffic += WORDSIZE;
 			invOrUpd++;
 			break;
 		default:
@@ -115,5 +117,9 @@ public class Bus {
 		pr.println("#Invalidations or Update : " + invOrUpd);
 		pr.println("#Write Back : " + wb);
 		pr.println();
+	}
+
+	public void shortSummary(PrintWriter pr) {
+		pr.print(dataTraffic + "," + invOrUpd + "," + wb);
 	}
 }
